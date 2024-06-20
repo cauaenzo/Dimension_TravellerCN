@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ghostly_Glitch.wav-dcfa24074b91a727b21574b145ea6f88.sample"
+
+[deps]
+
+source_file="res://Áudio do jogo - KAAYA/Ghostly_Glitch.wav"
+dest_files=[ "res://.import/Ghostly_Glitch.wav-dcfa24074b91a727b21574b145ea6f88.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

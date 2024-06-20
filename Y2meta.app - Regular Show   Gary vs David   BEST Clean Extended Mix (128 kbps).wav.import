@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Y2meta.app - Regular Show   Gary vs David   BEST Clean Extended Mix (128 kbps).wav-1edd1483c630a2c66c2a34773c379fa5.sample"
+
+[deps]
+
+source_file="res://Y2meta.app - Regular Show   Gary vs David   BEST Clean Extended Mix (128 kbps).wav"
+dest_files=[ "res://.import/Y2meta.app - Regular Show   Gary vs David   BEST Clean Extended Mix (128 kbps).wav-1edd1483c630a2c66c2a34773c379fa5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

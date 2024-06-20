@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://bolas.gd" type="Script" id=1]
+[ext_resource path="res://amuamua.jpg" type="Texture" id=2]
+
+[sub_resource type="SphereMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="CylinderShape" id=3]
+radius = 0.0764108
+height = 1.54319
+
+[sub_resource type="SphereMesh" id=4]
+
+[sub_resource type="CylinderShape" id=5]
+height = 9.94901
+
+[node name="asteroides" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.44786e-05, 0 )
+script = ExtResource( 1 )
+
+[node name="cano1" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.82063, 0 )
+
+[node name="CSGMesh" type="CSGMesh" parent="cano1"]
+transform = Transform( 1.17092, 0, 0, 0, 1.99952, 0, 0, 0, 2.656, 0, 4.76031, 0 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="cano1"]
+transform = Transform( 12.9281, 0, 0, 0, 2.39123, 0, 0, 0, 13.1684, 0, 4.0975, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="cano1"]
+transform = Transform( 1.00188, 0, 13.1683, 0, 2.39123, 0, -300.544, 0, 0.0438971, 0.0125833, 0.301622, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="cano1"]
+transform = Transform( -0.372452, 0, 13.1684, 0, 2.39123, 0, -300.546, 0, -0.0163188, 0.0125833, 18.5946, 0 )
+shape = SubResource( 3 )
+
+[node name="cano2" type="Area" parent="."]
+transform = Transform( -1, 3.25841e-07, 0, -3.25841e-07, -1, 0, 0, 0, 1, 0, 9.38703, 0 )
+
+[node name="CSGMesh" type="CSGMesh" parent="cano2"]
+transform = Transform( 0.901673, -1.1521e-06, 0, -2.30421e-07, 0.972564, 0, 0, 0, 2.56224, 1.18778e-06, 3.64528, 0 )
+mesh = SubResource( 4 )
+material = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="cano2"]
+transform = Transform( 0.348474, 2.12294e-07, -0.937319, 2.12294e-07, 1, 3.05417e-07, 0.937319, -3.05417e-07, 0.348474, -1.1332e-07, -0.347777, 0 )
+shape = SubResource( 5 )
+
+[node name="deletec" type="Timer" parent="."]
+wait_time = 8.0
+autostart = true
+[connection signal="body_entered" from="cano1" to="." method="colidiu"]
+[connection signal="body_entered" from="cano2" to="." method="colidiu"]
+[connection signal="timeout" from="deletec" to="." method="_on_deletec_timeout"]
