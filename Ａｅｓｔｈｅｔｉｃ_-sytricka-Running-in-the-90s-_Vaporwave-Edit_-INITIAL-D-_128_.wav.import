@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ａｅｓｔｈｅｔｉｃ_-sytricka-Running-in-the-90s-_Vaporwave-Edit_-INITIAL-D-_128_.wav-7dd247dd65578ff60c48d3e5135ec0c6.sample"
+
+[deps]
+
+source_file="res://Ａｅｓｔｈｅｔｉｃ_-sytricka-Running-in-the-90s-_Vaporwave-Edit_-INITIAL-D-_128_.wav"
+dest_files=[ "res://.import/Ａｅｓｔｈｅｔｉｃ_-sytricka-Running-in-the-90s-_Vaporwave-Edit_-INITIAL-D-_128_.wav-7dd247dd65578ff60c48d3e5135ec0c6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

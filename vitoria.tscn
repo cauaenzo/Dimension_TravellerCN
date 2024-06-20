@@ -1,0 +1,129 @@
+<<<<<<< HEAD
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Material da Aula/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://pexels-photo-721993.jpeg" type="Texture" id=2]
+[ext_resource path="res://script/vitoria.gd" type="Script" id=3]
+[ext_resource path="res://Áudio do jogo - KAAYA/No-Copyright-Music_-Sad-Cinematic-Background-Music-by-Rights-Free-Sound-Dawn-_320_.wav" type="AudioStream" id=4]
+=======
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Material da Aula/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Material da Aula/menu.jpg" type="Texture" id=2]
+[ext_resource path="res://script/vitoria.gd" type="Script" id=3]
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[node name="vitoria" type="Node2D"]
+script = ExtResource( 3 )
+
+<<<<<<< HEAD
+[node name="Default_Create_a_surrealistic_image_prompt_in_a_Halloween_nigh_1" type="Sprite" parent="."]
+position = Vector2( 509.82, 294.015 )
+scale = Vector2( 0.170634, 0.168882 )
+texture = ExtResource( 2 )
+
+[node name="texto" type="Label" parent="."]
+margin_left = 128.878
+margin_top = 77.3265
+margin_right = 928.878
+margin_bottom = 157.327
+custom_fonts/font = SubResource( 1 )
+text = "VIVA!!!"
+=======
+[node name="menu" type="Sprite" parent="."]
+position = Vector2( 394.191, 235.865 )
+scale = Vector2( 0.726705, 0.729501 )
+texture = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -52.0
+margin_top = -36.0
+margin_right = 1139.0
+margin_bottom = 686.0
+color = Color( 0.945098, 1, 0.0313726, 0.54902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texto" type="Label" parent="."]
+margin_left = 300.828
+margin_top = 152.376
+margin_right = 1100.83
+margin_bottom = 232.377
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0.996078, 0.133333, 1 )
+text = "Bimba!"
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texto2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+<<<<<<< HEAD
+margin_left = 129.83
+margin_top = 350.861
+margin_right = 929.83
+margin_bottom = 433.861
+custom_fonts/font = SubResource( 2 )
+text = "CONTINUE A VOAR!!!"
+=======
+margin_left = 141.23
+margin_top = 325.211
+margin_right = 941.23
+margin_bottom = 408.211
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.152941, 0.952941, 0.227451, 1 )
+text = "Os canos foram 
+derrotados!!!"
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texto3" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+<<<<<<< HEAD
+margin_left = 121.668
+margin_top = 542.673
+margin_right = 921.668
+=======
+margin_left = 145.418
+margin_top = 542.673
+margin_right = 945.418
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe
+margin_bottom = 625.673
+custom_fonts/font = SubResource( 3 )
+text = "Aperte R ou M para voltar ao menu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+<<<<<<< HEAD
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 2.019
+autoplay = true
+=======
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe

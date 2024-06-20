@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/6537122327166976.wav-ff0ddcb7438e57714388094e8559363a.sample"
+
+[deps]
+
+source_file="res://Áudio do jogo - KAAYA/6537122327166976.wav"
+dest_files=[ "res://.import/6537122327166976.wav-ff0ddcb7438e57714388094e8559363a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
