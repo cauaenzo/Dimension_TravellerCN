@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://script/postes.gd" type="Script" id=1]
@@ -112,3 +113,8 @@ wait_time = 8.0
 autostart = true
 [connection signal="body_entered" from="esmagador" to="." method="colidiu"]
 [connection signal="body_entered" from="esmagador 2" to="." method="colidiu"]
+=======
+[gd_scene format=2]
+
+[node name="postes" type="Spatial"]
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe

@@ -22,6 +22,7 @@ __meta__ = {
 }
 
 [node name="texto" type="Label" parent="."]
+<<<<<<< HEAD
 margin_left = -2.41546
 margin_top = 531.152
 margin_right = 434.584
@@ -30,6 +31,14 @@ custom_fonts/font = SubResource( 1 )
 text = "Aperte M para
 voltar ao menu
 R para reiniciar"
+=======
+margin_left = 11.6493
+margin_top = 546.975
+margin_right = 448.649
+margin_bottom = 585.975
+custom_fonts/font = SubResource( 1 )
+text = "Aperte R para reiniciar"
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe
 align = 1
 valign = 1
 __meta__ = {
@@ -45,7 +54,12 @@ margin_left = -437.0
 margin_top = -60.0452
 margin_bottom = -19.0452
 custom_fonts/font = SubResource( 1 )
+<<<<<<< HEAD
 text = "level 1"
+=======
+text = "Aperte M para
+voltar ao menu"
+>>>>>>> 7a8176e4adb8b2379cd7339c85ce03884f8167fe
 align = 1
 valign = 1
 __meta__ = {
