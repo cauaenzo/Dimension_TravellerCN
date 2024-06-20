@@ -1,0 +1,120 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://script/Canos.gd" type="Script" id=1]
+
+[sub_resource type="CylinderMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.470588, 0.0313726, 0.0156863, 1 )
+
+[sub_resource type="CylinderMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.482353, 0.0156863, 0, 1 )
+
+[sub_resource type="CylinderMesh" id=5]
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 1, 0.607843, 0, 1 )
+emission_enabled = true
+emission = Color( 0, 0, 0, 1 )
+emission_energy = 2.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="CylinderShape" id=7]
+height = 9.77656
+
+[sub_resource type="CapsuleShape" id=8]
+radius = 1.04442
+
+[sub_resource type="CapsuleShape" id=9]
+radius = 1.09788
+
+[node name="Canos" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="cano1" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.37, 0 )
+
+[node name="CSGMesh" type="CSGMesh" parent="cano1"]
+transform = Transform( 0.956692, 0, 0.291103, 0, 5, 0, -0.291103, 0, 0.956692, 0, 0, 0 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh2" type="CSGMesh" parent="cano1"]
+transform = Transform( 1.4, 0, 0, 0, 0.5, 0, 0, 0, 1.4, 0, 4.54062, 0 )
+mesh = SubResource( 3 )
+material = SubResource( 4 )
+
+[node name="CSGMesh4" type="CSGMesh" parent="cano1"]
+transform = Transform( -1, 1.62921e-06, 0, -3.25841e-07, -5, 0, 0, 0, 1, -0.0234871, -4.29792, -0.00985718 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh5" type="CSGMesh" parent="cano1"]
+transform = Transform( -1, 7.54979e-07, 0, 1.36999e-06, 45.3651, 0, 0, 0, 1, -0.0234871, -46.8063, -0.00985718 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh3" type="CSGMesh" parent="cano1"]
+transform = Transform( 1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 4.57933, 0 )
+operation = 2
+mesh = SubResource( 5 )
+material = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="cano1"]
+transform = Transform( 1, 0, 0, 0, 19.1525, 0, 0, 0, 1, 0, -88.5498, 0 )
+shape = SubResource( 7 )
+
+[node name="damitheers" type="CollisionShape" parent="cano1"]
+transform = Transform( 0.9891, 0, 0.506474, 0, 1, 0, -0.228161, 0, 9.1676, -0.184039, 1.46134, 0 )
+shape = SubResource( 8 )
+
+[node name="cano2" type="Area" parent="."]
+transform = Transform( -1, 3.25841e-07, 0, -3.25841e-07, -1, 0, 0, 0, 1, 0, 7.37, 0 )
+
+[node name="CSGMesh" type="CSGMesh" parent="cano2"]
+transform = Transform( 1, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh4" type="CSGMesh" parent="cano2"]
+transform = Transform( 1, 0, 0, 0, 5, 0, 0, 0, 1, -3.15085e-06, -9.66991, 0 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh6" type="CSGMesh" parent="cano2"]
+transform = Transform( 1, 1.18862e-05, 0, 2.4352e-06, 41.3595, 0, 0, 0, 1, -1.91971e-05, -58.9155, 0 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh5" type="CSGMesh" parent="cano2"]
+transform = Transform( 1, 0, 0, 0, 5, 0, 0, 0, 1, -6.19368e-06, -19.0083, 0 )
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CSGMesh2" type="CSGMesh" parent="cano2"]
+transform = Transform( 1.4, 0, 0, 0, 0.5, 0, 0, 0, 1.4, 0, 4.54062, 0 )
+mesh = SubResource( 3 )
+material = SubResource( 4 )
+
+[node name="CSGMesh3" type="CSGMesh" parent="cano2"]
+transform = Transform( 1, 0, 0, 0, 0.5, 0, 0, 0, 1, -6.89238e-09, 4.55818, 0 )
+operation = 2
+mesh = SubResource( 5 )
+material = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="cano2"]
+shape = SubResource( 7 )
+
+[node name="dmamitherss2" type="CollisionShape" parent="cano2"]
+transform = Transform( -0.926692, 6.97558e-07, -0.774297, 6.97558e-07, 1.2141, 2.52298e-07, 0.963406, -3.13917e-07, -9.14612, 4.77262e-07, 1.46471, 0 )
+shape = SubResource( 9 )
+
+[node name="deletec" type="Timer" parent="."]
+wait_time = 8.0
+autostart = true
+[connection signal="body_entered" from="cano1" to="." method="colidiu"]
+[connection signal="body_entered" from="cano2" to="." method="colidiu"]
+[connection signal="timeout" from="deletec" to="." method="_on_deletec_timeout"]
