@@ -1,0 +1,112 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://script/iniciar.gd" type="Script" id=1]
+[ext_resource path="res://Material da Aula/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://script buttons/DeWatermark.ai_1718903989633.jpg" type="Texture" id=3]
+[ext_resource path="res://script/fechar.gd" type="Script" id=4]
+[ext_resource path="res://Áudio do jogo - KAAYA/NO-COPYRIGHT-MUSIC-Ambient-Electronic-Music-_320_.wav" type="AudioStream" id=5]
+[ext_resource path="res://butão.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 22
+font_data = ExtResource( 2 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Titulo" type="Label" parent="."]
+modulate = Color( 0.12549, 0.105882, 0.654902, 1 )
+margin_left = 69.4235
+margin_top = 74.7012
+margin_right = 969.423
+margin_bottom = 124.701
+custom_fonts/font = SubResource( 1 )
+text = "Dimension Traveller"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Titulo"]
+margin_left = 120.982
+margin_top = 67.668
+margin_right = 720.982
+margin_bottom = 92.668
+custom_fonts/font = SubResource( 4 )
+text = "releitura do flappy bird"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.545
+anchor_bottom = 0.5
+margin_left = -93.0
+margin_top = -20.0
+margin_right = -81.848
+margin_bottom = 46.0
+custom_constants/separation = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="iniciar" type="Button" parent="VBoxContainer"]
+margin_right = 187.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 2 )
+text = "Iniciar"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fases" type="Button" parent="VBoxContainer"]
+margin_top = 81.0
+margin_right = 187.0
+margin_bottom = 109.0
+custom_fonts/font = SubResource( 3 )
+text = "FASES"
+script = ExtResource( 6 )
+
+[node name="fechar" type="Button" parent="VBoxContainer"]
+margin_top = 159.0
+margin_right = 187.0
+margin_bottom = 190.0
+custom_fonts/font = SubResource( 2 )
+text = "Fechar"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 1.786
+autoplay = true
+
+[node name="DeWatermarkai_1718903989633" type="Sprite" parent="."]
+position = Vector2( 519.086, 308.611 )
+scale = Vector2( 1.58705, 1.62837 )
+z_index = -1
+texture = ExtResource( 3 )
+[connection signal="pressed" from="VBoxContainer/iniciar" to="VBoxContainer/iniciar" method="_on_iniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Fases" to="VBoxContainer/Fases" method="_on_Fases_pressed"]
+[connection signal="pressed" from="VBoxContainer/fechar" to="VBoxContainer/fechar" method="_on_fechar_pressed"]

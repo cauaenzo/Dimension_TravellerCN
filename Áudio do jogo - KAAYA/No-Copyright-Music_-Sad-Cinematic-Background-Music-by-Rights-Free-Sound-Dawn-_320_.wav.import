@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/No-Copyright-Music_-Sad-Cinematic-Background-Music-by-Rights-Free-Sound-Dawn-_320_.wav-30b74edb41d7976434d322818cd6f25f.sample"
+
+[deps]
+
+source_file="res://Áudio do jogo - KAAYA/No-Copyright-Music_-Sad-Cinematic-Background-Music-by-Rights-Free-Sound-Dawn-_320_.wav"
+dest_files=[ "res://.import/No-Copyright-Music_-Sad-Cinematic-Background-Music-by-Rights-Free-Sound-Dawn-_320_.wav-30b74edb41d7976434d322818cd6f25f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

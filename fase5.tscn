@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://HUD5.tscn" type="PackedScene" id=2]
+[ext_resource path="res://asteroides.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Ａｅｓｔｈｅｔｉｃ_-sytricka-Running-in-the-90s-_Vaporwave-Edit_-INITIAL-D-_128_.wav" type="AudioStream" id=4]
+[ext_resource path="res://nebulosa.jpg" type="Texture" id=5]
+[ext_resource path="res://fase5.gd" type="Script" id=6]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 5 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_sky_orientation = Basis( -0.986141, 0, 0.165908, 0, 1, 0, -0.165908, 0, -0.986141 )
+background_energy = 2.23
+ambient_light_energy = 3.64
+
+[node name="fase5" type="Spatial"]
+script = ExtResource( 6 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="asteroides" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10 )
+
+[node name="asteroides2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20 )
+
+[node name="asteroides3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.01445, 0, 0, 0, 1.01445, 0, 0, 0, 1.01445, 0, 0, -30 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+
+[node name="HUD5" parent="." instance=ExtResource( 2 )]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+light_energy = 0.6
+
+[node name="gerac" type="Timer" parent="."]
+wait_time = 2.976
+autostart = true
+
+[node name="vitoria" type="Timer" parent="."]
+wait_time = 22.0
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+[connection signal="timeout" from="gerac" to="." method="_on_gerac_timeout"]
+[connection signal="timeout" from="vitoria" to="." method="_on_vitoria_timeout"]
